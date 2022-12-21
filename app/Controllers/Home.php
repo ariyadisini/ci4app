@@ -2,10 +2,32 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Page extends BaseController
 {
-    public function index()
+    public function tentang()
     {
-        return view('welcome_message');
+        echo view("Tentang Kami");
+    }
+
+    public function keanggotaan()
+    {
+        echo view("Keanggotaan");
+    }
+
+    public function pelatihan()
+    {
+        echo view("Pelatihan");
+    }
+    public function sertifikasi()
+    {
+        echo view("Sertifikasi");
+    }
+    public function peraturan()
+    {
+        echo view("Peraturan, Publikasi, Standar Profesi");
+    }
+    public function international()
+    {
+        echo view("International Corner");
     }
 }
